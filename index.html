@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>PixelBoard</title>
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+
+<div id="drawBoard">
+    <div id="controls">
+        <div class="instrument-wrap">
+            <input class="color" type="color" id="colorPenPick" value="#000000">
+            <button id="draw"><img src="img/pencil.svg"></button>
+        </div>
+        <div class="instrument-wrap">
+            <input class="color" type="color" id="colorFillPick" value="#FFFFFF">
+            <button id="fill"><img src="img/fill.png"></button>
+        </div>
+        <div class="instrument-wrap">
+        <div class="sizedown">
+            <button id="size" class="dropbtn"><img src="img/arrow.png"></button>
+            <div class="dropdown-content">
+                <label class="container">  4x4
+                    <input class="sizeRadio" type="radio" checked="checked" name="size">
+                </label>
+                <label class="container">8x8
+                    <input class="sizeRadio" type="radio" name="size">
+                </label>
+                <label class="container">16x16
+                    <input class="sizeRadio" type="radio"  name="size">
+                </label>
+                <label class="container">32x32
+                    <input class="sizeRadio" type="radio"  name="size">
+                </label>
+                <button id="changeSize"> Применить </button>
+            </div>
+        </div>
+        </div>
+    </div>
+    <canvas id="canvas" width="512px" height="512px"></canvas>
+</div>
+
+<script src="scripts/main.js" type="module"></script>
+</body>
+</html>
